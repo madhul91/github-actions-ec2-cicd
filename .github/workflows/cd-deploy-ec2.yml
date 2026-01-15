@@ -23,6 +23,6 @@ jobs:
             docker pull ${{ secrets.DOCKER_USERNAME }}/ec2-cicd-demo:latest
             docker run -d \
               --name ec2-cicd \
-              -p 80:80 \
+              -p 8056:80 \
               ${{ secrets.DOCKER_USERNAME }}/ec2-cicd-demo:latest
 
